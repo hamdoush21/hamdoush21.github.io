@@ -4,86 +4,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HAMDOUSH</title>
+
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     min-height:100vh;
+    font-family:Tahoma,Arial,sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-family:Tahoma,Arial;
-    background:linear-gradient(135deg,#050505,#1b1b1b);
+    background:
+        radial-gradient(circle at top left,#6d28d9,transparent 35%),
+        radial-gradient(circle at bottom right,#2563eb,transparent 35%),
+        linear-gradient(135deg,#0f172a,#111827);
     color:white;
+    overflow:hidden;
 }
-.box{
-    width:380px;
-    max-width:90%;
+
+.container{
+    width:390px;
+    max-width:92%;
     text-align:center;
-    background:#111;
     padding:35px 25px;
-    border-radius:25px;
-    box-shadow:0 0 40px #000;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:28px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
 }
+
+.logo{
+    width:95px;
+    height:95px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+    font-size:24px;
+    font-weight:bold;
+    box-shadow:0 10px 35px rgba(37,99,235,.4);
+}
+
 h1{
-    font-size:36px;
-    margin:0 0 10px;
+    margin:0;
+    font-size:38px;
+    letter-spacing:3px;
 }
+
 .welcome{
-    font-size:21px;
+    margin-top:12px;
+    font-size:20px;
 }
+
 .sub{
-    color:#aaa;
-    margin-bottom:25px;
+    margin:10px 0 25px;
+    color:#cbd5e1;
+    font-size:15px;
 }
+
 a{
     display:block;
-    padding:16px;
-    margin:14px 0;
-    border-radius:14px;
-    background:#222;
-    color:white;
     text-decoration:none;
-    font-size:18px;
+    color:white;
+    padding:16px;
+    margin:13px 0;
+    border-radius:16px;
+    font-size:17px;
     font-weight:bold;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.12);
+    transition:.25s;
 }
+
 a:hover{
-    background:#333;
-    transform:scale(1.02);
+    transform:translateY(-3px) scale(1.02);
+    background:rgba(255,255,255,.18);
 }
+
+.instagram:hover{
+    box-shadow:0 8px 25px rgba(225,48,108,.35);
+}
+
+.tiktok:hover{
+    box-shadow:0 8px 25px rgba(0,242,234,.25);
+}
+
+.facebook:hover{
+    box-shadow:0 8px 25px rgba(24,119,242,.35);
+}
+
 .footer{
-    color:#777;
-    margin-top:25px;
-    font-size:13px;
+    margin-top:22px;
+    color:#94a3b8;
+    font-size:12px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-<h1>HAMDOUSH</h1>
+    <div class="logo">H</div>
 
-<div class="welcome">أهلاً وسهلاً بيك 👋</div>
+    <h1>HAMDOUSH</h1>
 
-<div class="sub">هذني صفحاتي الرسمية 🔗</div>
+    <div class="welcome">
+        أهلاً وسهلاً بيك 👋
+    </div>
 
-<a href="https://www.instagram.com/k22cn/" target="_blank">
-📸 Instagram
-</a>
+    <div class="sub">
+        هذني صفحاتي الرسمية 🔗
+    </div>
 
-<a href="https://www.tiktok.com/@m01ql" target="_blank">
-🎵 TikTok
-</a>
+    <a class="instagram"
+       href="https://www.instagram.com/k22cn/"
+       target="_blank">
+       📸 Instagram
+    </a>
 
-<a href="https://www.facebook.com/MPQWG" target="_blank">
-📘 Facebook
-</a>
+    <a class="tiktok"
+       href="https://www.tiktok.com/@m01ql"
+       target="_blank">
+       🎵 TikTok
+    </a>
 
-<div class="footer">
-— HAMDOUSH —
-</div>
+    <a class="facebook"
+       href="https://www.facebook.com/MPQWG"
+       target="_blank">
+       📘 Facebook
+    </a>
+
+    <div class="footer">
+        — HAMDOUSH —
+    </div>
 
 </div>
 
